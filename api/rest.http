@@ -1,0 +1,16 @@
+### get request
+GET http://localhost:8000/api/v1/task/
+
+
+### post request
+POST http://localhost:8000/api/v1/task/
+Content-Type: application/json
+
+{
+    "task": "running",
+    "hr": 10
+}
+
+
+
+
