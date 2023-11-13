@@ -8,6 +8,10 @@ export const postTask = async (obj) => {
     return data;
   } catch (error) {
     console.log(error);
+    return {
+      status: 'error',
+      message: error.message,
+    };
   }
 };
 
@@ -17,6 +21,10 @@ export const getTasks = async () => {
     return data;
   } catch (error) {
     console.log(error);
+    return {
+      status: 'error',
+      message: error.message,
+    };
   }
 };
 
@@ -26,6 +34,10 @@ export const switchTask = async (obj) => {
     return data;
   } catch (error) {
     console.log(error);
+    return {
+      status: 'error',
+      message: error.message,
+    };
   }
 };
 
@@ -35,5 +47,9 @@ export const deleteTasks = async (ids) => {
     return data;
   } catch (error) {
     console.log(error);
+    return {
+      status: 'error',
+      message: error.message,
+    };
   }
 };
